@@ -5,15 +5,15 @@ st.header('Jogo 1')
 
 dic_odd1 = {}
 
-dic_odd1['0-0'] = int(st.text_input('0x0:'))
-dic_odd1['1-0'] = int(st.text_input('1x0:'))
-dic_odd1['0-1'] = int(st.text_input('0x1:'))
-dic_odd1['1-1'] = int(st.text_input('1x1:'))
-dic_odd1['2-0'] = int(st.text_input('2x0:'))
-dic_odd1['0-2'] = int(st.text_input('0x2:'))
-dic_odd1['2-1'] = int(st.text_input('2x1:'))
-dic_odd1['1-2'] = int(st.text_input('1x2:'))
-dic_odd1['2-2'] = int(st.text_input('2x2:'))
+dic_odd1['0-0'] = int(st.number_input('0x0:'))
+dic_odd1['1-0'] = int(st.number_input('1x0:'))
+dic_odd1['0-1'] = int(st.number_input('0x1:'))
+dic_odd1['1-1'] = int(st.number_input('1x1:'))
+dic_odd1['2-0'] = int(st.number_input('2x0:'))
+dic_odd1['0-2'] = int(st.number_input('0x2:'))
+dic_odd1['2-1'] = int(st.number_input('2x1:'))
+dic_odd1['1-2'] = int(st.number_input('1x2:'))
+dic_odd1['2-2'] = int(st.number_input('2x2:'))
 
 
 dic_prob1 = {}
@@ -28,15 +28,15 @@ st.header('Jogo 2')
 
 dic_odd2 = {}
 
-dic_odd2['0-0'] = int(st.text_input('0x0:'))
-dic_odd2['1-0'] = int(st.text_input('1x0:'))
-dic_odd2['0-1'] = int(st.text_input('0x1:'))
-dic_odd2['1-1'] = int(st.text_input('1x1:'))
-dic_odd2['2-0'] = int(st.text_input('2x0:'))
-dic_odd2['0-2'] = int(st.text_input('0x2:'))
-dic_odd2['2-1'] = int(st.text_input('2x1:'))
-dic_odd2['1-2'] = int(st.text_input('1x2:'))
-dic_odd2['2-2'] = int(st.text_input('2x2:'))
+dic_odd2['0-0'] = int(st.number_input('0x0:'))
+dic_odd2['1-0'] = int(st.number_input('1x0:'))
+dic_odd2['0-1'] = int(st.number_input('0x1:'))
+dic_odd2['1-1'] = int(st.number_input('1x1:'))
+dic_odd2['2-0'] = int(st.number_input('2x0:'))
+dic_odd2['0-2'] = int(st.number_input('0x2:'))
+dic_odd2['2-1'] = int(st.number_input('2x1:'))
+dic_odd2['1-2'] = int(st.number_input('1x2:'))
+dic_odd2['2-2'] = int(st.number_input('2x2:'))
 
 
 dic_prob2 = {}
@@ -77,6 +77,20 @@ while df_bet.min().min() > .76:
         lista_coluna = []
         
         for od in dic_odd2:
+            
+            val = round(total * (1/(dic_odd1[o] * dic_odd2[od])) / somaprod,2)
+            
+            lista_coluna.append(val)
+            
+        df_bet[str(o)] = lista_coluna
+        
+    total = total - 0.5
+
+
+retorno = (df_bet.iloc[0,0] * dic_odd1['0-0'] * dic_odd2['0-0'] - total) / total
+
+print(df_bet)
+print(retorno)
             
             val = round(total * (1/(dic_odd1[o] * dic_odd2[od])) / somaprod,2)
             
