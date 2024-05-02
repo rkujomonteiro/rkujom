@@ -8,8 +8,8 @@ with col1:
 
     st.header('Jogo 1')
 
-    pos_fora1 = st.number_input('Posição Equipe 1',min_value=1,max_value=30,value=1)
-    pos_fora2 = st.number_input('Posição Equipe 2',min_value=1,max_value=30,value=1)
+    pos_fora1 = st.number_input('Posição Equipe Casa 1',min_value=1,max_value=30,value=1)
+    pos_fora2 = st.number_input('Posição Equipe Fora 1',min_value=1,max_value=30,value=1)
     rodada1 = st.number_input('Rodada',min_value=1,max_value=46,value=1)
     
     
@@ -28,8 +28,8 @@ with col2:
 
     st.header('Jogo 2')
 
-    pos_casa2 = st.number_input('Posição Equipe 1',min_value=1,max_value=30,value=1)
-    pos_fora2 = st.number_input('Posição Equipe 2',min_value=1,max_value=30,value=1)
+    pos_casa2 = st.number_input('Posição Equipe Casa 2',min_value=1,max_value=30,value=1)
+    pos_fora2 = st.number_input('Posição Equipe Fora 2',min_value=1,max_value=30,value=1)
     rodada2 = st.number_input('Rodada',min_value=1,max_value=46,value=1)
     
     dic_odd2['0-0'] = st.number_input(' Jogo 2 - 0x0:',min_value=1.0,max_value=1000.0,value=1.0)
