@@ -5,15 +5,15 @@ st.header('Jogo 1')
 
 dic_odd1 = {}
 
-dic_odd1['0-0'] = int(st.number_input('0x0:'))
-dic_odd1['1-0'] = int(st.number_input('1x0:'))
-dic_odd1['0-1'] = int(st.number_input('0x1:'))
-dic_odd1['1-1'] = int(st.number_input('1x1:'))
-dic_odd1['2-0'] = int(st.number_input('2x0:'))
-dic_odd1['0-2'] = int(st.number_input('0x2:'))
-dic_odd1['2-1'] = int(st.number_input('2x1:'))
-dic_odd1['1-2'] = int(st.number_input('1x2:'))
-dic_odd1['2-2'] = int(st.number_input('2x2:'))
+dic_odd1['0-0'] = int(st.number_input('0x0:',min_value=1))
+dic_odd1['1-0'] = int(st.number_input('1x0:',min_value=1))
+dic_odd1['0-1'] = int(st.number_input('0x1:',min_value=1))
+dic_odd1['1-1'] = int(st.number_input('1x1:',min_value=1))
+dic_odd1['2-0'] = int(st.number_input('2x0:',min_value=1))
+dic_odd1['0-2'] = int(st.number_input('0x2:',min_value=1))
+dic_odd1['2-1'] = int(st.number_input('2x1:',min_value=1))
+dic_odd1['1-2'] = int(st.number_input('1x2:',min_value=1))
+dic_odd1['2-2'] = int(st.number_input('2x2:',min_value=1))
 
 
 dic_prob1 = {}
@@ -28,15 +28,15 @@ st.header('Jogo 2')
 
 dic_odd2 = {}
 
-dic_odd2['0-0'] = int(st.number_input('0x0:'))
-dic_odd2['1-0'] = int(st.number_input('1x0:'))
-dic_odd2['0-1'] = int(st.number_input('0x1:'))
-dic_odd2['1-1'] = int(st.number_input('1x1:'))
-dic_odd2['2-0'] = int(st.number_input('2x0:'))
-dic_odd2['0-2'] = int(st.number_input('0x2:'))
-dic_odd2['2-1'] = int(st.number_input('2x1:'))
-dic_odd2['1-2'] = int(st.number_input('1x2:'))
-dic_odd2['2-2'] = int(st.number_input('2x2:'))
+dic_odd2['0-0'] = int(st.number_input('0x0:',min_value=1))
+dic_odd2['1-0'] = int(st.number_input('1x0:',min_value=1))
+dic_odd2['0-1'] = int(st.number_input('0x1:',min_value=1))
+dic_odd2['1-1'] = int(st.number_input('1x1:',min_value=1))
+dic_odd2['2-0'] = int(st.number_input('2x0:',min_value=1))
+dic_odd2['0-2'] = int(st.number_input('0x2:',min_value=1))
+dic_odd2['2-1'] = int(st.number_input('2x1:',min_value=1))
+dic_odd2['1-2'] = int(st.number_input('1x2:',min_value=1))
+dic_odd2['2-2'] = int(st.number_input('2x2:',min_value=1))
 
 
 dic_prob2 = {}
