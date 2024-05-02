@@ -47,31 +47,18 @@ for o in dic_odd2:
 
 
 
-somaprod = prob1 * prob2
-    
 
-total = 1000
 
-    
-df_bet = pd.DataFrame()   
+def calculo(dic_odd1,dic_odd2,prob1,prob2):
 
-for o in dic_odd1:
-    
-    lista_coluna = []
-    
-    for od in dic_odd2:
+    somaprod = prob1 * prob2
         
-        val = round(total * (1/(dic_odd1[o] * dic_odd2[od])) / somaprod,2)
-        
-        lista_coluna.append(val)
-        
-    df_bet[str(o)] = lista_coluna
-
     
-while df_bet.min().min() > .76:
+    total = 1000
     
+        
     df_bet = pd.DataFrame()   
-
+    
     for o in dic_odd1:
         
         lista_coluna = []
@@ -83,11 +70,28 @@ while df_bet.min().min() > .76:
             lista_coluna.append(val)
             
         df_bet[str(o)] = lista_coluna
+    
         
-    total = total - 0.5
-
-
-retorno = (df_bet.iloc[0,0] * dic_odd1['0-0'] * dic_odd2['0-0'] - total) / total
-
-print(df_bet)
-print(retorno)
+    while df_bet.min().min() > .76:
+        
+        df_bet = pd.DataFrame()   
+    
+        for o in dic_odd1:
+            
+            lista_coluna = []
+            
+            for od in dic_odd2:
+                
+                val = round(total * (1/(dic_odd1[o] * dic_odd2[od])) / somaprod,2)
+                
+                lista_coluna.append(val)
+                
+            df_bet[str(o)] = lista_coluna
+            
+        total = total - 0.5
+    
+    
+    retorno = (df_bet.iloc[0,0] * dic_odd1['0-0'] * dic_odd2['0-0'] - total) / total
+    
+    print(df_bet)
+    print(retorno)
