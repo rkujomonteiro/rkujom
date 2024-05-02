@@ -1,6 +1,8 @@
 import pandas as pd
 import streamlit as st
 
+st.header('Jogo 1')
+
 dic_odd1 = {}
 
 dic_odd1['0-0'] = int(st.text_input('0x0:'))
@@ -22,6 +24,7 @@ for o in dic_odd1:
     
 
 
+st.header('Jogo 2')
 
 dic_odd2 = {}
 
