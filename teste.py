@@ -95,3 +95,6 @@ def calculo(dic_odd1,dic_odd2,prob1,prob2):
     
     print(df_bet)
     print(retorno)
+
+if st.button('Calcular'):
+    calculo(dic_odd1,dic_odd2,prob1,prob2)
