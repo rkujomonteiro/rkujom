@@ -3,15 +3,15 @@ import streamlit as st
 
 dic_odd1 = {}
 
-dic_odd1['0-0'] = int(st.number_input('0x0:',min_value=1,step=0.05,value=1,step=0.05))
-dic_odd1['1-0'] = int(st.number_input('1x0:',min_value=1,step=0.05,value=1,step=0.05))
-dic_odd1['0-1'] = int(st.number_input('0x1:',min_value=1,step=0.05,value=1,step=0.05))
-dic_odd1['1-1'] = int(st.number_input('1x1:',min_value=1,step=0.05,value=1,step=0.05))
-dic_odd1['2-0'] = int(st.number_input('2x0:',min_value=1,step=0.05,value=1,step=0.05))
-dic_odd1['0-2'] = int(st.number_input('0x2:',min_value=1,step=0.05,value=1,step=0.05))
-dic_odd1['2-1'] = int(st.number_input('2x1:',min_value=1,step=0.05,value=1,step=0.05))
-dic_odd1['1-2'] = int(st.number_input('1x2:',min_value=1,step=0.05,value=1,step=0.05))
-dic_odd1['2-2'] = int(st.number_input('2x2:',min_value=1,step=0.05,value=1,step=0.05))
+dic_odd1['0-0'] = int(st.number_input('0x0:',min_value=1,value=1,step=0.05))
+dic_odd1['1-0'] = int(st.number_input('1x0:',min_value=1,value=1,step=0.05))
+dic_odd1['0-1'] = int(st.number_input('0x1:',min_value=1,value=1,step=0.05))
+dic_odd1['1-1'] = int(st.number_input('1x1:',min_value=1,value=1,step=0.05))
+dic_odd1['2-0'] = int(st.number_input('2x0:',min_value=1,value=1,step=0.05))
+dic_odd1['0-2'] = int(st.number_input('0x2:',min_value=1,value=1,step=0.05))
+dic_odd1['2-1'] = int(st.number_input('2x1:',min_value=1,value=1,step=0.05))
+dic_odd1['1-2'] = int(st.number_input('1x2:',min_value=1,value=1,step=0.05))
+dic_odd1['2-2'] = int(st.number_input('2x2:',min_value=1,value=1,step=0.05))
 
 
 dic_prob1 = {}
@@ -25,15 +25,15 @@ for o in dic_odd1:
 
 dic_odd2 = {}
 
-dic_odd2['0-0'] = int(st.number_input('0x0:',min_value=1,step=0.05,value=1,step=0.05))
-dic_odd2['1-0'] = int(st.number_input('1x0:',min_value=1,step=0.05,value=1,step=0.05))
-dic_odd2['0-1'] = int(st.number_input('0x1:',min_value=1,step=0.05,value=1,step=0.05))
-dic_odd2['1-1'] = int(st.number_input('1x1:',min_value=1,step=0.05,value=1,step=0.05))
-dic_odd2['2-0'] = int(st.number_input('2x0:',min_value=1,step=0.05,value=1,step=0.05))
-dic_odd2['0-2'] = int(st.number_input('0x2:',min_value=1,step=0.05,value=1,step=0.05))
-dic_odd2['2-1'] = int(st.number_input('2x1:',min_value=1,step=0.05,value=1,step=0.05))
-dic_odd2['1-2'] = int(st.number_input('1x2:',min_value=1,step=0.05,value=1,step=0.05))
-dic_odd2['2-2'] = int(st.number_input('2x2:',min_value=1,step=0.05,value=1,step=0.05))
+dic_odd2['0-0'] = int(st.number_input('0x0:',min_value=1,value=1,step=0.05))
+dic_odd2['1-0'] = int(st.number_input('1x0:',min_value=1,value=1,step=0.05))
+dic_odd2['0-1'] = int(st.number_input('0x1:',min_value=1,value=1,step=0.05))
+dic_odd2['1-1'] = int(st.number_input('1x1:',min_value=1,value=1,step=0.05))
+dic_odd2['2-0'] = int(st.number_input('2x0:',min_value=1,value=1,step=0.05))
+dic_odd2['0-2'] = int(st.number_input('0x2:',min_value=1,value=1,step=0.05))
+dic_odd2['2-1'] = int(st.number_input('2x1:',min_value=1,value=1,step=0.05))
+dic_odd2['1-2'] = int(st.number_input('1x2:',min_value=1,value=1,step=0.05))
+dic_odd2['2-2'] = int(st.number_input('2x2:',min_value=1,value=1,step=0.05))
 
 
 dic_prob2 = {}
