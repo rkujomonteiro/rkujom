@@ -15,13 +15,17 @@ dic_odd1['2-1'] = int(st.number_input(' Jogo 1 - 2x1:',min_value=1))
 dic_odd1['1-2'] = int(st.number_input(' Jogo 1 - 1x2:',min_value=1))
 dic_odd1['2-2'] = int(st.number_input(' Jogo 1 - 2x2:',min_value=1))
 
+@st.cache
+def dic_prob(dic_odd):
+    dic_prob = {}
+    prob = 0
+    for o in dic_odd:
+        dic_prob[o] = 1/dic_odd[o]
+        prob += dic_prob[o]
+    return dic_prob, prob
 
-dic_prob1 = {}
-prob1 = 0
-for o in dic_odd1:
-    dic_prob1[o] = 1/dic_odd1[o]
-    prob1 += dic_prob1[o]
-    
+
+dic_prob1, prob1 = dic_prob(dic_odd1)    
 
 
 st.header('Jogo 2')
@@ -39,16 +43,12 @@ dic_odd2['1-2'] = int(st.number_input(' Jogo 2 - 1x2:',min_value=1))
 dic_odd2['2-2'] = int(st.number_input(' Jogo 2 - 2x2:',min_value=1))
 
 
-dic_prob2 = {}
-prob2 = 0
-for o in dic_odd2:
-    dic_prob2[o] = 1/dic_odd2[o]
-    prob2 += dic_prob2[o]
+dic_prob2, prob2 = dic_prob(dic_odd2)  
 
 
 
 
-
+@st.cache
 def calculo(dic_odd1,dic_odd2,prob1,prob2):
 
     somaprod = prob1 * prob2
@@ -92,9 +92,10 @@ def calculo(dic_odd1,dic_odd2,prob1,prob2):
     
     
     retorno = (df_bet.iloc[0,0] * dic_odd1['0-0'] * dic_odd2['0-0'] - total) / total
-    
-    print(df_bet)
-    print(retorno)
+
+    return df_bet
 
 if st.button('Calcular'):
-    calculo(dic_odd1,dic_odd2,prob1,prob2)
+    df_bet = calculo(dic_odd1,dic_odd2,prob1,prob2)
+    st.dataframe(df_bet)
+
