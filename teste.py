@@ -52,10 +52,7 @@ dic_prob2, prob2 = dic_prob(dic_odd2)
 def calculo(dic_odd1,dic_odd2,prob1,prob2):
 
     somaprod = prob1 * prob2
-        
-    
     total = 1000
-    
         
     df_bet = pd.DataFrame()   
     
@@ -90,15 +87,8 @@ def calculo(dic_odd1,dic_odd2,prob1,prob2):
             
         total = total - 0.5
     
-    
     retorno = (df_bet.iloc[0,0] * dic_odd1['0-0'] * dic_odd2['0-0'] - total) / total
+    return df_bet, retorno
 
-    return df_bet
 
-
-df_bet = calculo(dic_odd1,dic_odd2,prob1,prob2)
-
-print(df_bet['0-0'][0])
-
-st.dataframe(df_bet)
-
+df_bet, retorno = calculo(dic_odd1,dic_odd2,prob1,prob2)
