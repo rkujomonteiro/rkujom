@@ -91,17 +91,3 @@ retorno = (df_bet.iloc[0,0] * dic_odd1['0-0'] * dic_odd2['0-0'] - total) / total
 
 print(df_bet)
 print(retorno)
-            
-            val = round(total * (1/(dic_odd1[o] * dic_odd2[od])) / somaprod,2)
-            
-            lista_coluna.append(val)
-            
-        df_bet[str(o)] = lista_coluna
-        
-    total = total - 0.5
-
-
-retorno = (df_bet.iloc[0,0] * dic_odd1['0-0'] * dic_odd2['0-0'] - total) / total
-
-print(df_bet)
-print(retorno)
