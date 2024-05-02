@@ -43,7 +43,7 @@ dic_odd2['1-2'] = int(st.number_input(' Jogo 2 - 1x2:',min_value=1))
 dic_odd2['2-2'] = int(st.number_input(' Jogo 2 - 2x2:',min_value=1))
 
 
-dic_prob2, prob2 = dic_prob(dic_odd2)  
+dic_prob2, prob2 = dic_prob(dic_odd2)
 
 
 
@@ -95,10 +95,10 @@ def calculo(dic_odd1,dic_odd2,prob1,prob2):
 
     return df_bet
 
-if st.button('Calcular'):
-    df_bet = calculo(dic_odd1,dic_odd2,prob1,prob2)
 
-    print(df_bet['0-0'][0])
-    
-    st.dataframe(df_bet)
+df_bet = calculo(dic_odd1,dic_odd2,prob1,prob2)
+
+print(df_bet['0-0'][0])
+
+st.dataframe(df_bet)
 
