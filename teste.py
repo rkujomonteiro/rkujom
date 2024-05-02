@@ -88,3 +88,6 @@ def calculo(dic_odd1,dic_odd2,prob1,prob2):
 
 
 df_bet, retorno = calculo(dic_odd1,dic_odd2,prob1,prob2)
+
+st.dataframe(df_bet)
+st.text(retorno)
