@@ -97,5 +97,8 @@ def calculo(dic_odd1,dic_odd2,prob1,prob2):
 
 if st.button('Calcular'):
     df_bet = calculo(dic_odd1,dic_odd2,prob1,prob2)
+
+    print(df_bet['0-0'][0])
+    
     st.dataframe(df_bet)
 
