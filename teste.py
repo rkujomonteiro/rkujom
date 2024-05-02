@@ -15,7 +15,6 @@ dic_odd1['2-1'] = int(st.number_input(' Jogo 1 - 2x1:',min_value=1))
 dic_odd1['1-2'] = int(st.number_input(' Jogo 1 - 1x2:',min_value=1))
 dic_odd1['2-2'] = int(st.number_input(' Jogo 1 - 2x2:',min_value=1))
 
-@st.cache
 def dic_prob(dic_odd):
     dic_prob = {}
     prob = 0
@@ -46,9 +45,6 @@ dic_odd2['2-2'] = int(st.number_input(' Jogo 2 - 2x2:',min_value=1))
 dic_prob2, prob2 = dic_prob(dic_odd2)
 
 
-
-
-@st.cache
 def calculo(dic_odd1,dic_odd2,prob1,prob2):
 
     somaprod = prob1 * prob2
