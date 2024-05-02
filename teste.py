@@ -82,6 +82,8 @@ def calculo(dic_odd1,dic_odd2,prob1,prob2):
             df_bet[str(o)] = lista_coluna
             
         total = total - 0.5
+
+    df_bet.index = df_bet.columns.tolist()
     
     retorno = (df_bet.iloc[0,0] * dic_odd1['0-0'] * dic_odd2['0-0'] - total) / total
     return df_bet, retorno
