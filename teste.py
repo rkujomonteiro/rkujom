@@ -5,15 +5,15 @@ st.header('Jogo 1')
 
 dic_odd1 = {}
 
-dic_odd1['0-0'] = int(st.number_input('0x0:',min_value=1))
-dic_odd1['1-0'] = int(st.number_input('1x0:',min_value=1))
-dic_odd1['0-1'] = int(st.number_input('0x1:',min_value=1))
-dic_odd1['1-1'] = int(st.number_input('1x1:',min_value=1))
-dic_odd1['2-0'] = int(st.number_input('2x0:',min_value=1))
-dic_odd1['0-2'] = int(st.number_input('0x2:',min_value=1))
-dic_odd1['2-1'] = int(st.number_input('2x1:',min_value=1))
-dic_odd1['1-2'] = int(st.number_input('1x2:',min_value=1))
-dic_odd1['2-2'] = int(st.number_input('2x2:',min_value=1))
+dic_odd1['0-0'] = int(st.number_input(' Jogo 1 - 0x0:',min_value=1))
+dic_odd1['1-0'] = int(st.number_input(' Jogo 1 - 1x0:',min_value=1))
+dic_odd1['0-1'] = int(st.number_input(' Jogo 1 - 0x1:',min_value=1))
+dic_odd1['1-1'] = int(st.number_input(' Jogo 1 - 1x1:',min_value=1))
+dic_odd1['2-0'] = int(st.number_input(' Jogo 1 - 2x0:',min_value=1))
+dic_odd1['0-2'] = int(st.number_input(' Jogo 1 - 0x2:',min_value=1))
+dic_odd1['2-1'] = int(st.number_input(' Jogo 1 - 2x1:',min_value=1))
+dic_odd1['1-2'] = int(st.number_input(' Jogo 1 - 1x2:',min_value=1))
+dic_odd1['2-2'] = int(st.number_input(' Jogo 1 - 2x2:',min_value=1))
 
 
 dic_prob1 = {}
@@ -28,15 +28,15 @@ st.header('Jogo 2')
 
 dic_odd2 = {}
 
-dic_odd2['0-0'] = int(st.number_input('0x0:',min_value=1))
-dic_odd2['1-0'] = int(st.number_input('1x0:',min_value=1))
-dic_odd2['0-1'] = int(st.number_input('0x1:',min_value=1))
-dic_odd2['1-1'] = int(st.number_input('1x1:',min_value=1))
-dic_odd2['2-0'] = int(st.number_input('2x0:',min_value=1))
-dic_odd2['0-2'] = int(st.number_input('0x2:',min_value=1))
-dic_odd2['2-1'] = int(st.number_input('2x1:',min_value=1))
-dic_odd2['1-2'] = int(st.number_input('1x2:',min_value=1))
-dic_odd2['2-2'] = int(st.number_input('2x2:',min_value=1))
+dic_odd2['0-0'] = int(st.number_input(' Jogo 2 - 0x0:',min_value=1))
+dic_odd2['1-0'] = int(st.number_input(' Jogo 2 - 1x0:',min_value=1))
+dic_odd2['0-1'] = int(st.number_input(' Jogo 2 - 0x1:',min_value=1))
+dic_odd2['1-1'] = int(st.number_input(' Jogo 2 - 1x1:',min_value=1))
+dic_odd2['2-0'] = int(st.number_input(' Jogo 2 - 2x0:',min_value=1))
+dic_odd2['0-2'] = int(st.number_input(' Jogo 2 - 0x2:',min_value=1))
+dic_odd2['2-1'] = int(st.number_input(' Jogo 2 - 2x1:',min_value=1))
+dic_odd2['1-2'] = int(st.number_input(' Jogo 2 - 1x2:',min_value=1))
+dic_odd2['2-2'] = int(st.number_input(' Jogo 2 - 2x2:',min_value=1))
 
 
 dic_prob2 = {}
