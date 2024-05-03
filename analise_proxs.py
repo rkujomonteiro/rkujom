@@ -2,6 +2,7 @@ import pickle
 import pandas as pd
 import time
 import datetime as dt
+import lxml
 
 
 with open('base_fbref.pkl', 'rb') as f:
